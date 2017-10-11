@@ -13,6 +13,13 @@
 		422060BA1F8B4F2B005ED1F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 422060B91F8B4F2B005ED1F0 /* Assets.xcassets */; };
 		422060BD1F8B4F2B005ED1F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 422060BB1F8B4F2B005ED1F0 /* LaunchScreen.storyboard */; };
 		422060C01F8B4F2B005ED1F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 422060BF1F8B4F2B005ED1F0 /* main.m */; };
+		422060C81F8B4F3E005ED1F0 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 422060C71F8B4F3E005ED1F0 /* OpenGLES.framework */; };
+		422060CA1F8B4F44005ED1F0 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 422060C91F8B4F44005ED1F0 /* GLKit.framework */; };
+		422060CD1F8B4F6B005ED1F0 /* ZYGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 422060CC1F8B4F6B005ED1F0 /* ZYGLView.m */; };
+		423EFEDB1F8DB247005DBE3D /* VFMatrix.c in Sources */ = {isa = PBXBuildFile; fileRef = 423EFED91F8DB247005DBE3D /* VFMatrix.c */; };
+		423EFEDE1F8DB7FC005DBE3D /* VFVector.c in Sources */ = {isa = PBXBuildFile; fileRef = 423EFEDD1F8DB7FC005DBE3D /* VFVector.c */; };
+		42E99B021F8C732D001334CA /* vertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 42E99B011F8C732D001334CA /* vertex.glsl */; };
+		42E99B041F8C7342001334CA /* fragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 42E99B031F8C7342001334CA /* fragment.glsl */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,17 @@
 		422060BC1F8B4F2B005ED1F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		422060BE1F8B4F2B005ED1F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		422060BF1F8B4F2B005ED1F0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		422060C71F8B4F3E005ED1F0 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		422060C91F8B4F44005ED1F0 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		422060CB1F8B4F6B005ED1F0 /* ZYGLView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYGLView.h; sourceTree = "<group>"; };
+		422060CC1F8B4F6B005ED1F0 /* ZYGLView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYGLView.m; sourceTree = "<group>"; };
+		423EFED81F8DB246005DBE3D /* VFMatrix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VFMatrix.h; sourceTree = "<group>"; };
+		423EFED91F8DB247005DBE3D /* VFMatrix.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = VFMatrix.c; sourceTree = "<group>"; };
+		423EFEDA1F8DB247005DBE3D /* VFMathTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VFMathTypes.h; sourceTree = "<group>"; };
+		423EFEDC1F8DB7FB005DBE3D /* VFVector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VFVector.h; sourceTree = "<group>"; };
+		423EFEDD1F8DB7FC005DBE3D /* VFVector.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = VFVector.c; sourceTree = "<group>"; };
+		42E99B011F8C732D001334CA /* vertex.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = vertex.glsl; sourceTree = "<group>"; };
+		42E99B031F8C7342001334CA /* fragment.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = fragment.glsl; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +51,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				422060CA1F8B4F44005ED1F0 /* GLKit.framework in Frameworks */,
+				422060C81F8B4F3E005ED1F0 /* OpenGLES.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +64,7 @@
 			children = (
 				422060AF1F8B4F2B005ED1F0 /* esgl_1 */,
 				422060AE1F8B4F2B005ED1F0 /* Products */,
+				422060C61F8B4F3D005ED1F0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +83,15 @@
 				422060B11F8B4F2B005ED1F0 /* AppDelegate.m */,
 				422060B31F8B4F2B005ED1F0 /* ViewController.h */,
 				422060B41F8B4F2B005ED1F0 /* ViewController.m */,
+				422060CB1F8B4F6B005ED1F0 /* ZYGLView.h */,
+				422060CC1F8B4F6B005ED1F0 /* ZYGLView.m */,
+				423EFEDA1F8DB247005DBE3D /* VFMathTypes.h */,
+				423EFEDD1F8DB7FC005DBE3D /* VFVector.c */,
+				423EFEDC1F8DB7FB005DBE3D /* VFVector.h */,
+				423EFED91F8DB247005DBE3D /* VFMatrix.c */,
+				423EFED81F8DB246005DBE3D /* VFMatrix.h */,
+				42E99B011F8C732D001334CA /* vertex.glsl */,
+				42E99B031F8C7342001334CA /* fragment.glsl */,
 				422060B61F8B4F2B005ED1F0 /* Main.storyboard */,
 				422060B91F8B4F2B005ED1F0 /* Assets.xcassets */,
 				422060BB1F8B4F2B005ED1F0 /* LaunchScreen.storyboard */,
@@ -69,6 +99,15 @@
 				422060BF1F8B4F2B005ED1F0 /* main.m */,
 			);
 			path = esgl_1;
+			sourceTree = "<group>";
+		};
+		422060C61F8B4F3D005ED1F0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				422060C91F8B4F44005ED1F0 /* GLKit.framework */,
+				422060C71F8B4F3E005ED1F0 /* OpenGLES.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,7 +168,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42E99B041F8C7342001334CA /* fragment.glsl in Resources */,
 				422060BD1F8B4F2B005ED1F0 /* LaunchScreen.storyboard in Resources */,
+				42E99B021F8C732D001334CA /* vertex.glsl in Resources */,
 				422060BA1F8B4F2B005ED1F0 /* Assets.xcassets in Resources */,
 				422060B81F8B4F2B005ED1F0 /* Main.storyboard in Resources */,
 			);
@@ -143,7 +184,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				422060B51F8B4F2B005ED1F0 /* ViewController.m in Sources */,
+				423EFEDB1F8DB247005DBE3D /* VFMatrix.c in Sources */,
 				422060C01F8B4F2B005ED1F0 /* main.m in Sources */,
+				422060CD1F8B4F6B005ED1F0 /* ZYGLView.m in Sources */,
+				423EFEDE1F8DB7FC005DBE3D /* VFVector.c in Sources */,
 				422060B21F8B4F2B005ED1F0 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

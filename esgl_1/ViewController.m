@@ -7,23 +7,29 @@
 //
 
 #import "ViewController.h"
+#import <GLKit/GLKit.h>
+#import <OpenGLES/EAGL.h>
+#import "ZYGLView.h"
+
 
 @interface ViewController ()
-
+@property (nonatomic,strong)  ZYGLView *glView;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    self.glView = [[ZYGLView alloc] initWithFrame:self.view.bounds];
+    [self.view addSubview:self.glView];
+  
+    [self.glView prepare];
+    [self.glView display];
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    NSLog(@"***>%s-%d",__FUNCTION__,__LINE__);
 }
-
-
 @end
