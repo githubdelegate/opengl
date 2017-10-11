@@ -40,7 +40,7 @@ static const VFVertex crossLinesVertices[] = {
     GLint programID;
 }
 @property (nonatomic,strong) EAGLContext *ctx;
-@property (nonatomic,assign) CGFloat windowScale;
+@property (nonatomic,assign) GLfloat windowScale;
 @end
 
 @implementation ZYGLView
@@ -131,7 +131,7 @@ static const VFVertex crossLinesVertices[] = {
     glGetRenderbufferParameteriv(GL_RENDERBUFFER, GL_RENDERBUFFER_HEIGHT, &renderbufH);
     glViewport(0, 0, renderbufW, renderbufH);
     
-    self.windowScale = renderbufW / renderbufH;
+    self.windowScale = ((GLfloat)renderbufW / (GLfloat)renderbufH);
     
     // 14. 加载数据
     GLuint vboId;
