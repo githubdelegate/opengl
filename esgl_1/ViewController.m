@@ -26,7 +26,32 @@
   
     [self.glView prepare];
     [self.glView display];
+    
+    
+//    UIPickerView *pickV = [[UIPickerView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 60)];
+//    [self.view addSubview:pickV];
+//
+//    pickV.delegate = self;
 }
+
+// returns the number of 'columns' to display.
+//- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
+//    return 1;
+//}
+//
+//// returns the # of rows in each component..
+//- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component{
+//    return 3;
+//}
+//
+//- (nullable NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component{
+//
+//}
+//
+//- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
+//
+//}
+
 
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
