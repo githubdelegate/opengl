@@ -62,6 +62,19 @@ static const VFVertex mountainLinesVertices[] = {
     // Point Seven
     { 0.95f, -0.95f, 0.0f},
 };
+
+// 三角形
+static const VFVertex triangleTrianglesVertices[] = {
+    // Point V0
+    {0.000000, 0.500000, 0.000000},
+    
+    // Point V1
+    {-0.433013, -0.250000, 0.000000},
+    
+    // Point V2
+    {0.433013, -0.250000, 0.000000},
+};
+
 @interface ZYGLView(){
     GLint programID;
 }
@@ -170,9 +183,9 @@ static const VFVertex mountainLinesVertices[] = {
     GLsizeiptr dataSize;
     GLsizei verticesIndicesCount;
     
-    dataSize = sizeof(mountainLinesVertices);
-    dataPtr = mountainLinesVertices;
-    verticesIndicesCount = (GLsizei)(sizeof(mountainLinesVertices) / sizeof(mountainLinesVertices[0]));
+    dataSize = sizeof(triangleTrianglesVertices);
+    dataPtr = triangleTrianglesVertices;
+    verticesIndicesCount = (GLsizei)(sizeof(triangleTrianglesVertices) / sizeof(triangleTrianglesVertices[0]));
     
     // vbo
     glBindBuffer(GL_ARRAY_BUFFER, vboId);
@@ -204,7 +217,7 @@ static const VFVertex mountainLinesVertices[] = {
 
     glLineWidth(10);
     // 2. 绘制
-    glDrawArrays(GL_LINE_STRIP, 0, 7);
+    glDrawArrays(GL_TRIANGLES, 0, 3);
     
     // 3. 展示renderbuffer内容
     [self.ctx presentRenderbuffer:GL_RENDERBUFFER];
