@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		421F1F951F98A2A800719328 /* ZYCubeHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 421F1F941F98A2A800719328 /* ZYCubeHeader.m */; };
+		421F1F971F98A58800719328 /* cubuVextex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 421F1F961F98A58800719328 /* cubuVextex.glsl */; };
+		421F1F991F98A59B00719328 /* cubeFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 421F1F981F98A59B00719328 /* cubeFragment.glsl */; };
 		422060B21F8B4F2B005ED1F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 422060B11F8B4F2B005ED1F0 /* AppDelegate.m */; };
 		422060B51F8B4F2B005ED1F0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 422060B41F8B4F2B005ED1F0 /* ViewController.m */; };
 		422060B81F8B4F2B005ED1F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 422060B61F8B4F2B005ED1F0 /* Main.storyboard */; };
@@ -18,11 +21,17 @@
 		422060CD1F8B4F6B005ED1F0 /* ZYGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 422060CC1F8B4F6B005ED1F0 /* ZYGLView.m */; };
 		423EFEDB1F8DB247005DBE3D /* VFMatrix.c in Sources */ = {isa = PBXBuildFile; fileRef = 423EFED91F8DB247005DBE3D /* VFMatrix.c */; };
 		423EFEDE1F8DB7FC005DBE3D /* VFVector.c in Sources */ = {isa = PBXBuildFile; fileRef = 423EFEDD1F8DB7FC005DBE3D /* VFVector.c */; };
+		42A3BA4E1F8F8EA8000A9F5E /* ZYCubeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A3BA4D1F8F8EA8000A9F5E /* ZYCubeView.m */; };
+		42BBD51F1F98D44300890E17 /* VFRedisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BBD51D1F98D44300890E17 /* VFRedisplay.m */; };
 		42E99B021F8C732D001334CA /* vertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 42E99B011F8C732D001334CA /* vertex.glsl */; };
 		42E99B041F8C7342001334CA /* fragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 42E99B031F8C7342001334CA /* fragment.glsl */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		421F1F931F98A2A800719328 /* ZYCubeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYCubeHeader.h; sourceTree = "<group>"; };
+		421F1F941F98A2A800719328 /* ZYCubeHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYCubeHeader.m; sourceTree = "<group>"; };
+		421F1F961F98A58800719328 /* cubuVextex.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = cubuVextex.glsl; sourceTree = "<group>"; };
+		421F1F981F98A59B00719328 /* cubeFragment.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = cubeFragment.glsl; sourceTree = "<group>"; };
 		422060AD1F8B4F2B005ED1F0 /* esgl_1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = esgl_1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		422060B01F8B4F2B005ED1F0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		422060B11F8B4F2B005ED1F0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -42,6 +51,10 @@
 		423EFEDA1F8DB247005DBE3D /* VFMathTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VFMathTypes.h; sourceTree = "<group>"; };
 		423EFEDC1F8DB7FB005DBE3D /* VFVector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VFVector.h; sourceTree = "<group>"; };
 		423EFEDD1F8DB7FC005DBE3D /* VFVector.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = VFVector.c; sourceTree = "<group>"; };
+		42A3BA4C1F8F8EA8000A9F5E /* ZYCubeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYCubeView.h; sourceTree = "<group>"; };
+		42A3BA4D1F8F8EA8000A9F5E /* ZYCubeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYCubeView.m; sourceTree = "<group>"; };
+		42BBD51D1F98D44300890E17 /* VFRedisplay.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VFRedisplay.m; sourceTree = "<group>"; };
+		42BBD51E1F98D44300890E17 /* VFRedisplay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VFRedisplay.h; sourceTree = "<group>"; };
 		42E99B011F8C732D001334CA /* vertex.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = vertex.glsl; sourceTree = "<group>"; };
 		42E99B031F8C7342001334CA /* fragment.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = fragment.glsl; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,17 +92,25 @@
 		422060AF1F8B4F2B005ED1F0 /* esgl_1 */ = {
 			isa = PBXGroup;
 			children = (
+				42BBD51E1F98D44300890E17 /* VFRedisplay.h */,
+				42BBD51D1F98D44300890E17 /* VFRedisplay.m */,
+				421F1F931F98A2A800719328 /* ZYCubeHeader.h */,
+				421F1F941F98A2A800719328 /* ZYCubeHeader.m */,
 				422060B01F8B4F2B005ED1F0 /* AppDelegate.h */,
 				422060B11F8B4F2B005ED1F0 /* AppDelegate.m */,
 				422060B31F8B4F2B005ED1F0 /* ViewController.h */,
 				422060B41F8B4F2B005ED1F0 /* ViewController.m */,
 				422060CB1F8B4F6B005ED1F0 /* ZYGLView.h */,
 				422060CC1F8B4F6B005ED1F0 /* ZYGLView.m */,
+				42A3BA4C1F8F8EA8000A9F5E /* ZYCubeView.h */,
+				42A3BA4D1F8F8EA8000A9F5E /* ZYCubeView.m */,
 				423EFEDA1F8DB247005DBE3D /* VFMathTypes.h */,
 				423EFEDD1F8DB7FC005DBE3D /* VFVector.c */,
 				423EFEDC1F8DB7FB005DBE3D /* VFVector.h */,
 				423EFED91F8DB247005DBE3D /* VFMatrix.c */,
 				423EFED81F8DB246005DBE3D /* VFMatrix.h */,
+				421F1F961F98A58800719328 /* cubuVextex.glsl */,
+				421F1F981F98A59B00719328 /* cubeFragment.glsl */,
 				42E99B011F8C732D001334CA /* vertex.glsl */,
 				42E99B031F8C7342001334CA /* fragment.glsl */,
 				422060B61F8B4F2B005ED1F0 /* Main.storyboard */,
@@ -169,7 +190,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				42E99B041F8C7342001334CA /* fragment.glsl in Resources */,
+				421F1F991F98A59B00719328 /* cubeFragment.glsl in Resources */,
 				422060BD1F8B4F2B005ED1F0 /* LaunchScreen.storyboard in Resources */,
+				421F1F971F98A58800719328 /* cubuVextex.glsl in Resources */,
 				42E99B021F8C732D001334CA /* vertex.glsl in Resources */,
 				422060BA1F8B4F2B005ED1F0 /* Assets.xcassets in Resources */,
 				422060B81F8B4F2B005ED1F0 /* Main.storyboard in Resources */,
@@ -187,6 +210,9 @@
 				423EFEDB1F8DB247005DBE3D /* VFMatrix.c in Sources */,
 				422060C01F8B4F2B005ED1F0 /* main.m in Sources */,
 				422060CD1F8B4F6B005ED1F0 /* ZYGLView.m in Sources */,
+				42BBD51F1F98D44300890E17 /* VFRedisplay.m in Sources */,
+				421F1F951F98A2A800719328 /* ZYCubeHeader.m in Sources */,
+				42A3BA4E1F8F8EA8000A9F5E /* ZYCubeView.m in Sources */,
 				423EFEDE1F8DB7FC005DBE3D /* VFVector.c in Sources */,
 				422060B21F8B4F2B005ED1F0 /* AppDelegate.m in Sources */,
 			);

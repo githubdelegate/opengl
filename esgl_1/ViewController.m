@@ -10,10 +10,11 @@
 #import <GLKit/GLKit.h>
 #import <OpenGLES/EAGL.h>
 #import "ZYGLView.h"
-
+#import "ZYCubeView.h"
 
 @interface ViewController ()
 @property (nonatomic,strong)  ZYGLView *glView;
+@property (nonatomic,strong) ZYCubeView  *cubeView;
 @end
 
 @implementation ViewController
@@ -21,12 +22,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.glView = [[ZYGLView alloc] initWithFrame:self.view.bounds];
-    [self.view addSubview:self.glView];
-  
-    [self.glView prepare];
-    [self.glView display];
+//    self.glView = [[ZYGLView alloc] initWithFrame:self.view.bounds];
+//    [self.view addSubview:self.glView];
+//    [self.glView prepare];
+//    [self.glView display];    
     
+    self.cubeView = [[ZYCubeView alloc] initWithFrame:self.view.bounds];
+    [self.view addSubview:self.cubeView];
+    [self.cubeView prepare];
+    [self.cubeView drawAndRender];
+
     
 //    UIPickerView *pickV = [[UIPickerView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 60)];
 //    [self.view addSubview:pickV];
@@ -56,5 +61,7 @@
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
     NSLog(@"***>%s-%d",__FUNCTION__,__LINE__);
+    
+    [self.cubeView update];
 }
 @end

@@ -75,6 +75,12 @@ static const VFVertex triangleTrianglesVertices[] = {
     {0.433013, -0.250000, 0.000000},
 };
 
+static const VFVertex vertices[] = {
+    {{-0.5f, -0.5f, 0.0}, {0.343, 0.187, 0.630, 1.000}}, // lower left corner       // 紫色
+    {{ 0.5f, -0.5f, 0.0}, {0.987, 0.134, 0.733, 1.000}}, // lower right corner      // 紫红色
+    {{-0.5f,  0.5f, 0.0}, {0.987, 0.667, 0.341, 1.000}}, // upper left corner       // 橙色
+};
+
 @interface ZYGLView(){
     GLint programID;
 }
@@ -183,9 +189,9 @@ static const VFVertex triangleTrianglesVertices[] = {
     GLsizeiptr dataSize;
     GLsizei verticesIndicesCount;
     
-    dataSize = sizeof(triangleTrianglesVertices);
-    dataPtr = triangleTrianglesVertices;
-    verticesIndicesCount = (GLsizei)(sizeof(triangleTrianglesVertices) / sizeof(triangleTrianglesVertices[0]));
+    dataSize = sizeof(vertices);
+    dataPtr = vertices;
+    verticesIndicesCount = (GLsizei)(sizeof(vertices) / sizeof(vertices[0]));
     
     // vbo
     glBindBuffer(GL_ARRAY_BUFFER, vboId);
