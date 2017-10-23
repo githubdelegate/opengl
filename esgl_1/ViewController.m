@@ -11,10 +11,12 @@
 #import <OpenGLES/EAGL.h>
 #import "ZYGLView.h"
 #import "ZYCubeView.h"
+#import "ZYTextureView.h"
 
 @interface ViewController ()
 @property (nonatomic,strong)  ZYGLView *glView;
 @property (nonatomic,strong) ZYCubeView  *cubeView;
+@property (nonatomic,strong) ZYTextureView  *textureView;
 @end
 
 @implementation ViewController
@@ -27,10 +29,14 @@
 //    [self.glView prepare];
 //    [self.glView display];    
     
-    self.cubeView = [[ZYCubeView alloc] initWithFrame:self.view.bounds];
-    [self.view addSubview:self.cubeView];
-    [self.cubeView prepare];
-    [self.cubeView drawAndRender];
+//    self.cubeView = [[ZYCubeView alloc] initWithFrame:self.view.bounds];
+//    [self.view addSubview:self.cubeView];
+//    [self.cubeView prepare];
+//    [self.cubeView drawAndRender];
+    
+    self.textureView = [[ZYTextureView alloc] initWithFrame:self.view.bounds];
+    [self.view addSubview:self.textureView];
+    
 
     
 //    UIPickerView *pickV = [[UIPickerView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 60)];

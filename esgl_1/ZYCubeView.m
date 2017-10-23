@@ -63,6 +63,7 @@ typedef struct {
 }
 
 - (void)setDefault {
+    // 设置初始值
     self.modelRotate   = GLKVector3Make(0, 0, 0);
     self.viewRotate    = self.modelRotate;
     
@@ -128,7 +129,6 @@ typedef struct {
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, sizeof(VFVertex), (const GLvoid *)offsetof(VFVertex, position));
     glEnableVertexAttribArray(1);
     glVertexAttribPointer(1, 4, GL_FLOAT, GL_FALSE, sizeof(VFVertex), (const GLvoid *)offsetof(VFVertex, color));
-    
 }
 
 - (void)drawAndRender{
@@ -192,10 +192,8 @@ typedef struct {
 
 // <VFRedisplayDelegate>
 - (void)updateContentsWithTimes:(NSTimeInterval)times {
-    
     [self preferTransformsWithTimes:times];
     [self drawAndRender];
-    
 }
 
 
