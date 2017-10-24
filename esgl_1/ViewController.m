@@ -24,18 +24,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-//    self.glView = [[ZYGLView alloc] initWithFrame:self.view.bounds];
-//    [self.view addSubview:self.glView];
-//    [self.glView prepare];
-//    [self.glView display];    
+    self.glView = [[ZYGLView alloc] initWithFrame:self.view.bounds];
+    [self.view addSubview:self.glView];
+    [self.glView prepare];
+    [self.glView display];    
     
 //    self.cubeView = [[ZYCubeView alloc] initWithFrame:self.view.bounds];
 //    [self.view addSubview:self.cubeView];
 //    [self.cubeView prepare];
 //    [self.cubeView drawAndRender];
     
-    self.textureView = [[ZYTextureView alloc] initWithFrame:self.view.bounds];
-    [self.view addSubview:self.textureView];
+//    self.textureView = [[ZYTextureView alloc] initWithFrame:self.view.bounds];
+//    [self.view addSubview:self.textureView];
     
 
     

@@ -183,7 +183,7 @@ static const VFVertex vertices[] = {
     
     // 14. 加载顶点数据
     GLuint vboId;
-    glGenBuffers(1, &vboId);
+//    glGenBuffers(1, &vboId);
     
     const GLvoid *dataPtr;
     GLsizeiptr dataSize;
@@ -194,11 +194,12 @@ static const VFVertex vertices[] = {
     verticesIndicesCount = (GLsizei)(sizeof(vertices) / sizeof(vertices[0]));
     
     // vbo
-    glBindBuffer(GL_ARRAY_BUFFER, vboId);
-    glBufferData(GL_ARRAY_BUFFER, dataSize, dataPtr, GL_STATIC_DRAW);
+//    glBindBuffer(GL_ARRAY_BUFFER, vboId);
+//    glBufferData(GL_ARRAY_BUFFER, dataSize, dataPtr, GL_STATIC_DRAW);
     glEnableVertexAttribArray(0);
     // 设置shader中postion数据
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, sizeof(VFVertex), (const GLvoid *)offsetof(VFVertex,Position));
+//    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, sizeof(VFVertex), (const GLvoid *)offsetof(VFVertex,Position));
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, sizeof(VFVertex), vertices);
     // 设置shader 中color数据
     glDisableVertexAttribArray(1);
     glVertexAttrib4fv(1, whiteColor);
