@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4216268F1FAACDCE008A5B04 /* ZYGLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4216268E1FAACDCE008A5B04 /* ZYGLViewController.m */; };
 		421F1F951F98A2A800719328 /* ZYCubeHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 421F1F941F98A2A800719328 /* ZYCubeHeader.m */; };
 		421F1F971F98A58800719328 /* cubuVextex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 421F1F961F98A58800719328 /* cubuVextex.glsl */; };
 		421F1F991F98A59B00719328 /* cubeFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 421F1F981F98A59B00719328 /* cubeFragment.glsl */; };
@@ -33,6 +34,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4216268D1FAACDCE008A5B04 /* ZYGLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYGLViewController.h; sourceTree = "<group>"; };
+		4216268E1FAACDCE008A5B04 /* ZYGLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYGLViewController.m; sourceTree = "<group>"; };
 		421F1F931F98A2A800719328 /* ZYCubeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYCubeHeader.h; sourceTree = "<group>"; };
 		421F1F941F98A2A800719328 /* ZYCubeHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYCubeHeader.m; sourceTree = "<group>"; };
 		421F1F961F98A58800719328 /* cubuVextex.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = cubuVextex.glsl; sourceTree = "<group>"; };
@@ -85,6 +88,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4216268C1FAACD9A008A5B04 /* esonios */ = {
+			isa = PBXGroup;
+			children = (
+				4216268D1FAACDCE008A5B04 /* ZYGLViewController.h */,
+				4216268E1FAACDCE008A5B04 /* ZYGLViewController.m */,
+			);
+			path = esonios;
+			sourceTree = "<group>";
+		};
 		422060A41F8B4F2B005ED1F0 = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +117,7 @@
 		422060AF1F8B4F2B005ED1F0 /* esgl_1 */ = {
 			isa = PBXGroup;
 			children = (
+				4216268C1FAACD9A008A5B04 /* esonios */,
 				42BBD5201F99EA5700890E17 /* texture */,
 				42BBD51E1F98D44300890E17 /* VFRedisplay.h */,
 				42BBD51D1F98D44300890E17 /* VFRedisplay.m */,
@@ -238,6 +251,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4216268F1FAACDCE008A5B04 /* ZYGLViewController.m in Sources */,
 				422060B51F8B4F2B005ED1F0 /* ViewController.m in Sources */,
 				423EFEDB1F8DB247005DBE3D /* VFMatrix.c in Sources */,
 				422060C01F8B4F2B005ED1F0 /* main.m in Sources */,

@@ -17,9 +17,7 @@
     GLuint colorRboId;
     GLuint textureId;
     GLuint vboId;
-    
     GLint programId;
-    
 }
 @property (nonatomic,strong) EAGLContext  *ctx;
 @property (nonatomic,strong) VYTransforms  *currentTransforms,*oldTransform;
@@ -28,7 +26,6 @@
 @implementation ZYTextureView
 
 - (void)layoutSubviews{
-    
     self.ctx = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
     [EAGLContext setCurrentContext:self.ctx];
     
@@ -50,14 +47,14 @@
     glGetRenderbufferParameteriv(GL_RENDERBUFFER, GL_RENDERBUFFER_HEIGHT, &renderHeight);
     
     //----- 2. 准备顶点和下标数据 -----
-//    glGenBuffers(1, &vboId);
-//    glBindBuffer(GL_ARRAY_BUFFER, vboId);
-//    const GLvoid *data = NULL;
-//    data = text2DSquare;
-//    glBufferData(GL_ARRAY_BUFFER, sizeof(text2DSquare), text2DSquare, GL_STATIC_DRAW);
+    glGenBuffers(1, &vboId);
+    glBindBuffer(GL_ARRAY_BUFFER, vboId);
+    const GLvoid *data = NULL;
+    data = text2DSquare;
+    glBufferData(GL_ARRAY_BUFFER, sizeof(text2DSquare), text2DSquare, GL_STATIC_DRAW);
     const GLvoid *indicts = NULL;
     indicts = squareIndicts;
-//    glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(squareIndicts), indicts, GL_STATIC_DRAW);
+    glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(squareIndicts), indicts, GL_STATIC_DRAW);
     
     //------- 3. 设置shader program -------
     GLuint vShaderId = [self addShader:GL_VERTEX_SHADER];
@@ -99,13 +96,13 @@
 
     // 4.7 给attribute变量赋值
     glEnableVertexAttribArray(0);
-//    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, sizeof(ZYVextex), (const GLvoid*)offsetof(ZYVextex, postion));
-    GLfloat *d = text2DSquare;
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, sizeof(ZYVextex),d);
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, sizeof(ZYVextex), (const GLvoid*)offsetof(ZYVextex, postion));
+//    GLfloat *d = text2DSquare;
+//    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, sizeof(ZYVextex),d);
     glEnableVertexAttribArray(1);
-//    glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, sizeof(ZYVextex), (const GLvoid *)offsetof(ZYVextex, texCoord));
-    d = d + 3;
-    glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, sizeof(ZYVextex),d);
+    glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, sizeof(ZYVextex), (const GLvoid *)offsetof(ZYVextex, texCoord));
+//    d = d + 3;
+//    glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, sizeof(ZYVextex),d);
     
     //------ 5. 创建texture -----
     glGenTextures(1, &textureId);
