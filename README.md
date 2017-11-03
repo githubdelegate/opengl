@@ -1,2 +1,2 @@
 # opengl
-learn opengl es on ios 
+learn opengles on ios 

@@ -26,6 +26,9 @@
 		422FCFE21F9DDB3B00172ED0 /* 512_512.png in Resources */ = {isa = PBXBuildFile; fileRef = 422FCFDE1F9DD3E100172ED0 /* 512_512.png */; };
 		423EFEDB1F8DB247005DBE3D /* VFMatrix.c in Sources */ = {isa = PBXBuildFile; fileRef = 423EFED91F8DB247005DBE3D /* VFMatrix.c */; };
 		423EFEDE1F8DB7FC005DBE3D /* VFVector.c in Sources */ = {isa = PBXBuildFile; fileRef = 423EFEDD1F8DB7FC005DBE3D /* VFVector.c */; };
+		429E18F51FAC662700E433E0 /* AGLKView.m in Sources */ = {isa = PBXBuildFile; fileRef = 429E18F41FAC662700E433E0 /* AGLKView.m */; };
+		429E18F81FAC79F200E433E0 /* AGLKContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 429E18F71FAC79F200E433E0 /* AGLKContext.m */; };
+		429E18FB1FAC7B0400E433E0 /* AGLKVertexAttribArrayBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 429E18FA1FAC7B0400E433E0 /* AGLKVertexAttribArrayBuffer.m */; };
 		42A3BA4E1F8F8EA8000A9F5E /* ZYCubeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A3BA4D1F8F8EA8000A9F5E /* ZYCubeView.m */; };
 		42BBD51F1F98D44300890E17 /* VFRedisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BBD51D1F98D44300890E17 /* VFRedisplay.m */; };
 		42BBD5231F99EA7400890E17 /* ZYTextureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BBD5221F99EA7400890E17 /* ZYTextureView.m */; };
@@ -65,6 +68,12 @@
 		423EFEDA1F8DB247005DBE3D /* VFMathTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VFMathTypes.h; sourceTree = "<group>"; };
 		423EFEDC1F8DB7FB005DBE3D /* VFVector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VFVector.h; sourceTree = "<group>"; };
 		423EFEDD1F8DB7FC005DBE3D /* VFVector.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = VFVector.c; sourceTree = "<group>"; };
+		429E18F31FAC662700E433E0 /* AGLKView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AGLKView.h; sourceTree = "<group>"; };
+		429E18F41FAC662700E433E0 /* AGLKView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AGLKView.m; sourceTree = "<group>"; };
+		429E18F61FAC79F200E433E0 /* AGLKContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AGLKContext.h; sourceTree = "<group>"; };
+		429E18F71FAC79F200E433E0 /* AGLKContext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AGLKContext.m; sourceTree = "<group>"; };
+		429E18F91FAC7B0400E433E0 /* AGLKVertexAttribArrayBuffer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AGLKVertexAttribArrayBuffer.h; sourceTree = "<group>"; };
+		429E18FA1FAC7B0400E433E0 /* AGLKVertexAttribArrayBuffer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AGLKVertexAttribArrayBuffer.m; sourceTree = "<group>"; };
 		42A3BA4C1F8F8EA8000A9F5E /* ZYCubeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYCubeView.h; sourceTree = "<group>"; };
 		42A3BA4D1F8F8EA8000A9F5E /* ZYCubeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYCubeView.m; sourceTree = "<group>"; };
 		42BBD51D1F98D44300890E17 /* VFRedisplay.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VFRedisplay.m; sourceTree = "<group>"; };
@@ -93,6 +102,12 @@
 			children = (
 				4216268D1FAACDCE008A5B04 /* ZYGLViewController.h */,
 				4216268E1FAACDCE008A5B04 /* ZYGLViewController.m */,
+				429E18F31FAC662700E433E0 /* AGLKView.h */,
+				429E18F41FAC662700E433E0 /* AGLKView.m */,
+				429E18F61FAC79F200E433E0 /* AGLKContext.h */,
+				429E18F71FAC79F200E433E0 /* AGLKContext.m */,
+				429E18F91FAC7B0400E433E0 /* AGLKVertexAttribArrayBuffer.h */,
+				429E18FA1FAC7B0400E433E0 /* AGLKVertexAttribArrayBuffer.m */,
 			);
 			path = esonios;
 			sourceTree = "<group>";
@@ -253,6 +268,7 @@
 			files = (
 				4216268F1FAACDCE008A5B04 /* ZYGLViewController.m in Sources */,
 				422060B51F8B4F2B005ED1F0 /* ViewController.m in Sources */,
+				429E18F81FAC79F200E433E0 /* AGLKContext.m in Sources */,
 				423EFEDB1F8DB247005DBE3D /* VFMatrix.c in Sources */,
 				422060C01F8B4F2B005ED1F0 /* main.m in Sources */,
 				42BBD5231F99EA7400890E17 /* ZYTextureView.m in Sources */,
@@ -262,7 +278,9 @@
 				42A3BA4E1F8F8EA8000A9F5E /* ZYCubeView.m in Sources */,
 				423EFEDE1F8DB7FC005DBE3D /* VFVector.c in Sources */,
 				422060B21F8B4F2B005ED1F0 /* AppDelegate.m in Sources */,
+				429E18FB1FAC7B0400E433E0 /* AGLKVertexAttribArrayBuffer.m in Sources */,
 				422FCFE11F9DD46B00172ED0 /* VYTransforms.m in Sources */,
+				429E18F51FAC662700E433E0 /* AGLKView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
